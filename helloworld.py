@@ -1,2 +1,2 @@
 
-print("Hello world")fgfg
+print("Hello world")
