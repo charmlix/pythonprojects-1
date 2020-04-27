@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    stages{
+        stage("Run helloworld") {
+            steps {
+                sh """
+                    python helloworld.python.py
+                """    
+            }
+        }
+        stage("Run conditionals.py") {
+            steps {
+                sh """
+                    python conditionals
+                """"    
+            }
+        }
+    }
+}
